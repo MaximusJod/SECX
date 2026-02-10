@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For HEMA ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Segoe UI, sans-serif;
+    background: linear-gradient(#ffd6e8,#fff);
+    color:#4a0026;
+    text-align:center;
+    padding:30px;
+}
+
+.page{
+    display:none;
+    min-height:90vh;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.page.active{
+    display:flex;
+}
+
+h1{
+    font-size:2.2em;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:1.2em;
+    line-height:1.8;
+    max-width:700px;
+}
+
+button{
+    margin-top:30px;
+    padding:14px 30px;
+    font-size:1em;
+    background:#ff4d88;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+img{
+    max-width:90%;
+    border-radius:20px;
+    margin-top:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HOME -->
+<div class="page active" id="home">
+    <h1>HEMA ❤️</h1>
+    <p>
+        Yeh sirf ek website nahi hai.<br>
+        Yeh woh baatein hain jo main dil mein rakhta hoon,<br>
+        par har baar keh nahi paata.
+    </p>
+    <p>
+        Ek-ek karke tap karna…<br>
+        har page mein main hoon.
+    </p>
+    <button onclick="go('rose')">Shuru Karein 🌹</button>
+</div>
+
+<!-- ROSE DAY -->
+<div class="page" id="rose">
+    <h1>🌹 Rose Day</h1>
+    <p>
+        Main tumhe phool nahi de paaya,<br>
+        par sach yeh hai —<br>
+        phool bhi tumhari jagah nahi le sakte.
+    </p>
+    <p>
+        Tumhari muskaan hi mera favourite rose hai, HEMA.
+    </p>
+    <button onclick="go('propose')">Next 💍</button>
+</div>
+
+<!-- PROPOSE DAY -->
+<div class="page" id="propose">
+    <h1>💍 Propose Day</h1>
+    <p>
+        Mujhe dramatic proposal nahi aata,<br>
+        par mera dil bohot clear hai.
+    </p>
+    <p>
+        Main tumhe sirf pyaar nahi karta,<br>
+        main tumhe har din choose karta hoon.
+    </p>
+    <button onclick="go('chocolate')">Next 🍫</button>
+</div>
+
+<!-- CHOCOLATE DAY -->
+<div class="page" id="chocolate">
+    <h1>🍫 Chocolate Day</h1>
+    <p>
+        Chocolate thodi der ke liye sweet hoti hai,<br>
+        par tum poora din acha bana deti ho.
+    </p>
+    <p>
+        Tum meri life ka woh taste ho<br>
+        jiske bina sab feeka lagta hai.
+    </p>
+    <button onclick="go('teddy')">Next 🧸</button>
+</div>
+
+<!-- TEDDY DAY -->
+<div class="page" id="teddy">
+    <h1>🧸 Teddy Day</h1>
+    <p>
+        Tumhari baahon jaisa comfort<br>
+        duniya ke kisi teddy mein nahi milta.
+    </p>
+    <p>
+        Tum bina bole samajh jaati ho,<br>
+        aur wahi tumhe sabse khaas banata hai.
+    </p>
+    <button onclick="go('promise')">Next 🤞</button>
+</div>
+
+<!-- PROMISE DAY -->
+<div class="page" id="promise">
+    <h1>🤞 Promise Day</h1>
+    <p>
+        Main perfect hone ka vaada nahi karta,<br>
+        par tumhare saath sachcha rehne ka vaada karta hoon.
+    </p>
+    <p>
+        Jab cheezein mushkil ho jaayengi,<br>
+        main haath nahi chhodunga, HEMA.
+    </p>
+    <button onclick="go('final')">Aakhri ❤️</button>
+</div>
+
+<!-- FINAL -->
+<div class="page" id="final">
+    <h1>❤️ Bas Ek Aakhri Baat</h1>
+
+    <!-- Upload photo.jpg in same folder -->
+    <img src="photo.jpg" alt="Us">
+
+    <p>
+        Is photo mein sirf hum nahi hain,<br>
+        ismein woh sukoon hai jo mujhe tumhare saath milta hai.
+    </p>
+    <p>
+        Agar kabhi main kam bolun,<br>
+        toh yaad rakhna —<br>
+        mera pyaar shor nahi karta,<br>
+        bas chupchaap saath rehta hai.
+    </p>
+    <p>
+        HEMA,<br>
+        tum meri zindagi ka sabse khoobsurat hissa ho.
+    </p>
+</div>
+
+<script>
+function go(id){
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
